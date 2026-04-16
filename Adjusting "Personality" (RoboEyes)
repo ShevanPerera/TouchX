@@ -1,0 +1,24 @@
+The robot's expressions are handled by the roboEyes library. You can change how it reacts to the world in the setup() and loop() sections.
+
+Change Moods
+In the loop(), you currently have it set to HAPPY when touched. You can change the expressions to:
+
+DEFAULT
+
+TIRED
+
+ANGRY
+
+HAPPY
+
+Example Code Change:
+if (digitalRead(touchSensor) == HIGH) {
+  roboEyes.setMood(ANGRY); // Change this from HAPPY to ANGRY
+}
+
+Enable Animations
+You can trigger "one-shot" animations when an event happens (like hitting an obstacle):
+
+roboEyes.anim_confused(); (Eyes shake left and right)
+
+roboEyes.anim_laugh(); (Eyes shake up and down)
