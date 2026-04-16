@@ -1,0 +1,5 @@
+1. Fluid Animations: NEVER use delay() in the main part of the loop() if you want the eyes to blink smoothly. Use roboEyes.update() as often as possible.
+
+2. I2C Address: If your OLED screen is blank, ensure your I2C address is correct. Most modules use 0x3C, but some use 0x3D.
+
+3. Power: If the robot resets when the motors start, use a separate battery pack for the motors and the Arduino.
