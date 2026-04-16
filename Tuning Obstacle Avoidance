@@ -1,0 +1,13 @@
+2. Tuning Obstacle Avoidance
+The robot is currently set to react when an object is 20cm away.
+
+Change Detection Distance
+Find this line in the loop() and change the number:
+if (distance < 30) { // Increased to 30cm for faster robots
+
+Change Escape Maneuvers
+You can adjust the delay() values to make the robot turn wider or reverse longer:
+reverseCar();
+delay(1000); // Reverses for 1 second instead of 0.5s
+turnRight();
+delay(300);  // Sharper, shorter turn
