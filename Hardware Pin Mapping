@@ -1,0 +1,7 @@
+If you are using a different Motor Driver (like an L298N or L293D) and your motors are spinning backward, you don't need to swap wires. Just swap the pin numbers in the code:
+Component, Current Pin
+Touch Sensor,8
+Trig Pin (Ultrasonic),A0
+Echo Pin (Ultrasonic),A1
+Left Motor,"4, 5"
+Right Motor,"7, 6"
